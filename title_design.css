@@ -1,0 +1,28 @@
+/* ========= 見出し1 ========= */
+.HyperMD-header-1, .markdown-preview-view h1 {
+    margin: 2em 0 1em 0;
+    padding: 7px !important;
+    background-color: #99ad8f;
+    color: #fcfffc;
+    font-weight: bold;
+}
+
+/* ========= 見出し2：行全体に下線 ========= */
+
+.HyperMD-header-2,
+.markdown-preview-view h2 {
+    color: #49634a;
+    padding-bottom: 10px !important;
+    border-bottom: solid 2px #49634a;
+}
+
+/* ========= 見出し3：太字＋文字に下線 ========= */
+.HyperMD-header-3,
+.markdown-preview-view h3 {
+    color: #6c866c;
+    font-weight: bold;
+    font-size: 110%;
+    /* padding-bottom: 1% !important; */
+    /* padding-bottom: 0.1% !important; */
+    text-decoration: underline;
+}

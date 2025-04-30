@@ -1,0 +1,9 @@
+.image-embed img {
+	display: block;
+	float: left;
+	max-width: 250px;
+	max-height: 250px;
+	width: auto;
+	height: auto;
+	margin: 1em auto 1em auto !important;
+}
