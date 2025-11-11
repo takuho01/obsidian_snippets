@@ -1,5 +1,6 @@
 /* ========= 見出し1 ========= */
 .HyperMD-header-1, .markdown-preview-view h1 {
+    font-size: 160%;
     margin: 2em 0 1em 0;
     padding: 7px !important;
     background-color: #99ad8f;
@@ -9,11 +10,19 @@
 
 /* ========= 見出し2：行全体に下線 ========= */
 
+.cm-s-obsidian .cm-line.HyperMD-header {
+    /* margin-bottom: 15px !important  ; */
+    margin-bottom: 1.5% !important  ;
+}
+
 .HyperMD-header-2,
 .markdown-preview-view h2 {
-    color: #49634a;
-    padding-bottom: 10px !important;
-    border-bottom: solid 2px #49634a;
+    font-size: 130% !important;
+    color: #49634a !important;
+    padding-bottom: 0.3% !important;
+    border-bottom: solid 2px #49634a !important;
+    margin-bottom: 5px !important;
+    font-weight: bold !important;
 }
 
 /* ========= 見出し3：太字＋文字に下線 ========= */
@@ -22,7 +31,10 @@
     color: #6c866c;
     font-weight: bold;
     font-size: 110%;
-    /* padding-bottom: 1% !important; */
-    /* padding-bottom: 0.1% !important; */
+    /* padding-bottom: 0.3% !important; */
+    /* padding-bottom: 0.3% !important; */
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
     text-decoration: underline;
 }

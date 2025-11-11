@@ -1,0 +1,11 @@
+
+/* kanban-plugin__item-wrapper */
+
+.kanban-plugin__item-wrapper {
+    margin-top: 8px !important;
+}
+
+.kanban-plugin__item-title-wrapper {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}

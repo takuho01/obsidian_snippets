@@ -1,0 +1,22 @@
+/* 
+https://wineroses.hatenablog.com/entry/2023/12/23/105812 
+ここから。 まだいい感じじゃない。
+裏に、素の "-" が残っているのが気持ち悪い。
+いまは、bulletを無理やり大きくして隠している状態
+*/
+
+/* .list-bullet:after {
+  visibility: hidden;
+}
+
+.list-bullet:before {
+  position: absolute;
+  /* top: 0px; */
+  /* left: -3px; */
+  bottom: 1px;
+  /* bottomがないと、"-"が隠せない。"-"が消せないのが解せない。 */
+  content: "-";
+  color: black;
+  scale: 2;
+} */
+
