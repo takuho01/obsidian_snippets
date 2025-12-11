@@ -1,0 +1,16 @@
+:root {
+    /* importを付けると、jsなどから操作できなくなるので付けない */
+  --editor-background-color: rgb(236, 236, 236);
+  --current-cursor-color: rgba(72, 134, 77, 0.2);
+  
+  --editor-font-color: black;
+  --editor-line-height: 1.7;
+  --editor-weight: 430;
+  
+  --p-spacing: 0.1em !important;
+  
+  /* --- line editor --- */
+  --editor-width: 800;
+  --line-edge-width: 20px;
+}
+

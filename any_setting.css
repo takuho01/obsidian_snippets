@@ -1,8 +1,0 @@
-.cm-hmd-indented-code {
-all: unset !important; 
-}
-
-.markdown-preview-view, .cm-content {
-    line-height: 1.6 !important;  /* 行間を広げる */
-  }
-  

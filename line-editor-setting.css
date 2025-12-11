@@ -1,0 +1,136 @@
+
+/* line editorを有効化するためのcss
+    on/offで、line editorを完全に切り替えられるようにすること。
+*/
+
+.cm-sizer, .markdown-source-view.mod-cm6.is-readable-line-width .cm-content {
+    /* エディタの横幅 */
+    /* 背景色が塗られる範囲が設定される */
+    max-width: calc(var(--editor-width)*1px) !important;
+}
+
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-line {
+    /* エディタの横幅 */
+    /* 文字が入力される範囲を指定される */
+    /* 文字範囲がエディタ背景とぴったり一致しないように幅を持たせている */
+    max-width: calc(var(--editor-width)*1px - var(--line-edge-width)) !important;
+}
+
+.cm-lineWrapping {
+    /* lineに背景色付け */
+    /* line editor */
+    background: var(--editor-background-color) !important;
+    background-clip: content-box !important;
+}
+
+
+.cm-line, .internal-embed, .block-language-button {
+    /* line editor */
+    /* 視認性のため、lineの端から少しずらす */
+    border-left: 20px solid var(--editor-background-color) !important;
+}
+
+.table-cell-wrapper .cm-line {
+    /* line editor */
+    /* tableの中のcm-lineへのずらしを消す。 */
+    border-left: 0px !important;
+}
+
+
+/* --- */
+
+.cm-line.HyperMD-header-2 {
+    /* 下線を左にずらすため、必要。view modeでは不要のため、分割している */
+    border-left: 20px solid var(--editor-background-color) !important;
+    border-right: 20px solid var(--editor-background-color) !important;
+}
+
+.cm-line.HyperMD-header-2, .markdown-preview-view h2 {
+  position: relative;
+}
+
+.cm-line.HyperMD-header-2::after, .markdown-preview-view h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.5px !important;
+  background: #49634a;
+}
+
+
+/* ========= 見出し1 ========= */
+.HyperMD-header.HyperMD-header-1.cm-line,
+.markdown-preview-view h1 {
+    font-size: 160%;
+    background-color: #acc79f;
+    color: #3a6e01 !important;
+    font-weight: bold !important;
+    line-height: var(--editor-line-height) !important;
+    
+    /* padding-top : 0px !important;
+    padding-bottom: 0.3% !important;
+    margin-bottom: 2% !important  ;
+    margin-bottom: 5px !important; */
+}
+
+/* ========= 見出し2：行全体に下線 ========= */
+
+.HyperMD-header.HyperMD-header-2.cm-line,
+.markdown-preview-view h2 {
+    font-size: 120% !important;
+    color: #49634a !important;
+    font-weight: bold !important;
+    
+    /* padding-top : 0px !important;
+    padding-bottom: 0.% !important;
+    margin-bottom: 2.5% !important; */
+    
+    /* 
+    --p-spacing周りを崩したら、クリック判定が壊れるようなので、
+    汚い処理だが、topを削っただけ、bottom marginを増やす形にする。
+    */
+    --tmp-mod-h2: 10px;
+    padding-top : calc(var(--p-spacing) - var(--tmp-mod-h2)) !important;
+    margin-bottom: var(--tmp-mod-h2) !important;
+}
+
+.cm-line.HyperMD-header-2 {
+    /* 下線を左にずらすため、必要。view modeでは不要のため、分割している */
+    border-left: 20px solid var(--editor-background-color) !important;
+    border-right: 20px solid var(--editor-background-color) !important;
+}
+
+.cm-line.HyperMD-header-2, .markdown-preview-view h2 {
+  position: relative;
+}
+
+.cm-line.HyperMD-header-2::after, .markdown-preview-view h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.5px !important;
+  background: #49634a;
+}
+
+
+/* ========= 見出し3：太字＋文字に下線 ========= */
+.HyperMD-header.HyperMD-header-3.cm-line,
+.markdown-preview-view h3 {
+    font-size: 110%;
+    text-decoration: underline;
+    font-weight: bold !important;
+    color: #49634a !important;
+    
+    /* margin-bottom: 0px !important;
+    margin-top: 10px !important;
+    padding-top: 0px !important; */
+}
+
+.markdown-preview-view h3 {
+    /* margin-top: 30px !important; */
+}
+

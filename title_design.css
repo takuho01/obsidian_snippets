@@ -1,40 +1,50 @@
 /* ========= 見出し1 ========= */
-.HyperMD-header-1, .markdown-preview-view h1 {
+.HyperMD-header.HyperMD-header-1.cm-line,
+.markdown-preview-view h1 {
     font-size: 160%;
-    margin: 2em 0 1em 0;
-    padding: 7px !important;
-    background-color: #99ad8f;
-    color: #fcfffc;
-    font-weight: bold;
+    background-color: #acc79f;
+    color: #3a6e01 !important;
+    font-weight: bold !important;
+    line-height: var(--editor-line-height) !important;
+    
+    padding-top : 0px !important;
+    padding-bottom: 0.3% !important;
+    margin-bottom: 2% !important  ;
+    margin-bottom: 5px !important;
 }
 
 /* ========= 見出し2：行全体に下線 ========= */
 
-.cm-s-obsidian .cm-line.HyperMD-header {
-    /* margin-bottom: 15px !important  ; */
-    margin-bottom: 1.5% !important  ;
+.HyperMD-header.HyperMD-header-2.cm-line,
+.markdown-preview-view h2 {
+    color: #49634a !important;
+    font-size: 120% !important;
+    font-weight: bold !important;
+    
+    margin-bottom: 2% !important  ;
+    padding-top : 0px !important;
+    padding-bottom: 0.% !important;
+    
+    border-bottom: 2.5px solid #49634a !important;
 }
 
-.HyperMD-header-2,
-.markdown-preview-view h2 {
-    font-size: 130% !important;
-    color: #49634a !important;
-    padding-bottom: 0.3% !important;
-    border-bottom: solid 2px #49634a !important;
-    margin-bottom: 5px !important;
-    font-weight: bold !important;
+    
+
+.cm-s-obsidian .cm-line.HyperMD-header-2 {
+    /* margin-bottom: 15px !important  ; */
+    margin-bottom: 2.5% !important  ;
+    /* margin-bottom: 10px !important  ; */
 }
 
 /* ========= 見出し3：太字＋文字に下線 ========= */
-.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-3.cm-line,
 .markdown-preview-view h3 {
-    color: #6c866c;
-    font-weight: bold;
     font-size: 110%;
-    /* padding-bottom: 0.3% !important; */
-    /* padding-bottom: 0.3% !important; */
+    text-decoration: underline;
+    font-weight: bold !important;
+    color: #49634a !important;
+    
     margin-bottom: 0px !important;
     margin-top: 0px !important;
     padding-top: 0px !important;
-    text-decoration: underline;
 }

@@ -1,0 +1,34 @@
+/* -------------------- */
+/* --- table setting --- */
+/* -------------------- */
+
+.table-cell-wrapper,
+table th:nth-child(1), table td:nth-child(1),
+table th:nth-child(2), table td:nth-child(2)
+{
+    color: var(--editor-font-color) !important;
+    line-height: var(--editor-line-height) !important;
+    font-weight: var(--editor-weight) !important;
+}
+
+table th:nth-child(1), table td:nth-child(1) {
+    font-size: 80% !important;
+    min-width: 180px !important;
+    max-width: 180px !important;
+}
+table th:nth-child(2), table td:nth-child(2) {
+    font-size: 80% !important;
+    min-width: 250px !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget {
+    margin: 0px !important;
+    margin-left: 15px !important;
+}
+
+.cm-line,
+.markdown-preview-view .el-p {
+    color: var(--editor-font-color) !important;
+    line-height: var(--editor-line-height) !important;
+    font-weight: var(--editor-weight) !important;
+}

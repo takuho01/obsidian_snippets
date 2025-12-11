@@ -1,22 +1,32 @@
-/* 
-https://wineroses.hatenablog.com/entry/2023/12/23/105812 
-ここから。 まだいい感じじゃない。
-裏に、素の "-" が残っているのが気持ち悪い。
-いまは、bulletを無理やり大きくして隠している状態
-*/
+/* -------------------- */
+/* --- bullet setting --- */
+/* -------------------- */
 
-/* .list-bullet:after {
-  visibility: hidden;
+.HyperMD-list-line { 
+    font-size: calc(var(--font-text-size)*0.95) !important;
+    padding-top: calc(var(--list-spacing) + 0.3em) !important;
+    /* padding-bottom: calc(var(--list-spacing) - 0.1em) !important; */
+    line-height: 1.35 !important;
 }
 
-.list-bullet:before {
-  position: absolute;
-  /* top: 0px; */
-  /* left: -3px; */
-  bottom: 1px;
-  /* bottomがないと、"-"が隠せない。"-"が消せないのが解せない。 */
-  content: "-";
-  color: black;
-  scale: 2;
-} */
+.HyperMD-list-line-nobullet {
+    font-size: calc(var(--font-text-size)*0.95) !important;
+    padding-top: calc(var(--list-spacing)-0.1em) !important;
+    padding-bottom: calc(var(--list-spacing)-0.1em) !important;
+    line-height: 1.35 !important;
+}
 
+.cm-formatting-list-ul{
+    padding-inline-start: calc(var(--list-padding-inline-start) - 0.4em) !important;
+    color: var(--editor-font-color) !important;
+    margin-right: 0em !important;
+}
+
+.cm-indent-spacing {
+    padding-inline-start: calc(var(--list-indent-editing) + var(--list-marker-space) - 0.48em) !important;
+}
+
+.list-bullet {
+    color: var(--editor-font-color) !important;
+    padding-right: 0.2em !important;
+}

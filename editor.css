@@ -1,118 +1,65 @@
-/* .cm-contentContainer {
-    margin: 0 !important;
-    padding: 0 !important;
+
+/* -------------------- */
+/* --- basic setting --- */
+/* -------------------- */
+
+.cm-line,
+.markdown-preview-view .el-p {
+    color: var(--editor-font-color) !important;
+    line-height: var(--editor-line-height) !important;
+    font-weight: var(--editor-weight) !important;
 }
 
-.cm-scroller {
-    padding: 1px !important;
-} */
-
-.metadata-container {
-    /* display: none !important; */
-    
-    /* margin: 0 !important;
-    padding: 0 !important;
-    margin-top: 5px !important;
-    line-height: 0.5 !important; */
-    margin: 0 !important;
+/* 現在カーソルがある行の背景色を変更 */
+.cm-active.cm-line {
+  background-color: var(--current-cursor-color) !important;
+  /* border-bottom: solid 2px #4ff157 !important; */
 }
 
-.metadata-container .is-collapsed {
-    margin: 0 !important;
-    /* padding: 0 !important; */
-    /* margin-top: 5px !important; */
-    /* line-height: 0.5 !important; */
+/* 折りたたんだ場合のマージン調整 */
+.cm-line .is-collapsed {
+    margin-bottom: 10px !important;
 }
 
-.inline-title {
+/* -------------------- */
+/* --- title setting --- */
+/* -------------------- */
+
+/* この設定を入れると、画像を挿入した際、クリック判定の位置がずれるため、削除する。 */
+
+/* .inline-title {
+    /* タイトル。現在はconfigで
+    inline title offにしているので表示されない */
     font-size: 1.3em !important;
     /* 斜めフォント */
     font-style: italic !important;
 }
 
-.cm-scroller {
-    padding-top: 15px !important;
-}
-
-.table-cell-wrapper {
-    /* padding-top: 0.2em !important; */
+.view-header-title-parent, .view-header-title {
+    /* title(status barにあるほう)デザイン */
+    font-size: 20px !important;
+    font-style: italic !important;
     color: rgb(0, 0, 0) !important;
-    line-height: 1.7 !important;
-    /* line-height: 1.5 !important; */
-    font-weight: 430 !important;
-}
-
-table th:nth-child(1), table td:nth-child(1) {
-    color: rgb(0, 0, 0) !important;
-    line-height: 1.7 !important;
-    font-size: 80% !important;
-    font-weight: 430 !important;
-    min-width: 180px !important;
-    max-width: 180px !important;
-}
-table th:nth-child(2), table td:nth-child(2) {
-    color: rgb(0, 0, 0) !important;
-    line-height: 1.7 !important;
-    font-size: 80% !important;
-    font-weight: 430 !important;
-    min-width: 250px !important;
-}
-
-/* .mod-active-row-handle .cm-active.cm-line .cm-scroller{
-    line-height: 1 !important;
-    padding-top: 0px !important;
 } */
 
-.table-wrapper .cm-scroller {
-    padding-top: 0px !important;
-}
 
-.cm-line {
-    /* padding-top: 0.2em !important; */
-    color: rgb(0, 0, 0) !important;
-    line-height: 1.7 !important;
-    /* line-height: 1.5 !important; */
-    font-weight: 430 !important;
-}
+/* -------------------- */
+/* --- minimal setting --- */
+/* -------------------- */
 
-.HyperMD-list-line { 
-    font-size: calc(var(--font-text-size)*0.95) !important;
-    padding-top: calc(var(--list-spacing) + 0.3em) !important;
-    line-height: 1.35 !important;
-}
+/* この設定を入れると、画像を挿入した際、クリック判定の位置がずれるため、削除する。 */
 
-.HyperMD-list-line-nobullet {
-    font-size: calc(var(--font-text-size)*0.95) !important;
-    padding-top: calc(var(--list-spacing) - 0.2em) !important;
-    line-height: 1.35 !important;
-    /* padding-inline-start: calc(var(--list-indent-editing)*0.9) !important; */
-}
+/* .metadata-container, .metadata-container .is-collapsed {
+    /* propertyのサイズを小さくする */
+    margin: 0 !important;
+} */
 
-.cm-formatting-list-ul{
-    padding-inline-start: calc(var(--list-padding-inline-start) - 0.4em) !important;
-    /* padding-right: 0.1em !important; */
-    color: black !important;
-    margin-right: 0em !important;
-}
+/* .cm-scroller {
+    /* 無駄部分除去のため。 */
+    padding-top: 15px !important;
+} */
 
-.cm-indent-spacing {
-    padding-inline-start: calc(var(--list-indent-editing) + var(--list-marker-space) - 0.48em) !important;
-    /* padding-right: 0.5em !important; */
-}
 
-.list-bullet {
-    color: black !important;
-    /* scale: 1.7 !important; */
-    padding-right: 0.2em !important;
-}
 
-.metadata-container {
-    /* font-size: 0.7em !important; */
-}
 
-/* 現在カーソルがある行の背景色を変更 */
-.cm-active.cm-line {
-  background-color: rgba(72, 134, 77, 0.2);
-  /* border-bottom: solid 2px #4ff157 !important; */
-}
 

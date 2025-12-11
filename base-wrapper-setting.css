@@ -1,0 +1,20 @@
+/* --------------- */
+/* base wrapperへのcss */
+/* --------------- */
+
+.base-wrapper .cm-sizer, 
+.markdown-source-view.base-wrapper.mod-cm6.is-readable-line-width .cm-content  {
+    max-width: 1200px !important;
+}
+
+.base-wrapper .cm-lineWrapping {
+    background: white !important;
+}
+
+.base-wrapper .cm-line,.base-wrapper .internal-embed {
+    border-left: 0px !important;
+}
+
+.base-wrapper .block-language-button {
+    border-left: 0px !important;
+}

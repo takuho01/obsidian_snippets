@@ -1,0 +1,71 @@
+/* ========= 見出し1 ========= */
+.cm-line.HyperMD-header-1,
+.markdown-preview-view h1 {
+    font-size: 160%;
+    background-color: #acc79f;
+    padding-top : 0px !important;
+    margin-bottom: 2% !important  ;
+    padding-bottom: 0.3% !important;
+    margin-bottom: 5px !important;
+    color: #3a6e01 !important;
+    font-weight: bold !important;
+    line-height: var(--editor-line-height) !important;
+}
+
+/* ========= 見出し2：行全体に下線 ========= */
+
+.cm-line.HyperMD-header-2,
+.markdown-preview-view h2 {
+    margin-bottom: 2% !important  ;
+    font-size: 120% !important;
+    padding-top : 0px !important;
+    padding-bottom: 0.% !important;
+    /* margin-bottom: 5px !important; */
+    color: #49634a !important;
+    /* border-bottom: solid 2px #49634a !important; */
+    font-weight: bold !important;
+    /* border-left: 20px solid rgb(242, 243, 241) !important; */
+    /* margin-left: 10px !important; */
+    /* padding-left: 10px !important; */
+    
+}
+
+.cm-line.HyperMD-header-2 {
+    /* 下線を左にずらすため、必要。view modeでは不要のため、分割している */
+    border-left: 20px solid var(--editor-background-color) !important;
+    border-right: 20px solid var(--editor-background-color) !important;
+}
+
+.cm-line.HyperMD-header-2, .markdown-preview-view h2 {
+  position: relative;
+}
+
+.cm-line.HyperMD-header-2::after, .markdown-preview-view h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.5px !important;
+  background: #49634a;
+}
+
+    
+.cm-s-obsidian .cm-line.HyperMD-header-2 {
+    /* margin-bottom: 15px !important  ; */
+    margin-bottom: 2.5% !important  ;
+    /* margin-bottom: 10px !important  ; */
+}
+
+/* ========= 見出し3：太字＋文字に下線 ========= */
+.cm-line.HyperMD-header-3,
+.markdown-preview-view h3 {
+    color: #6c866c;
+    font-size: 110%;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    text-decoration: underline;
+    color: #49634a !important;
+    font-weight: bold !important;
+}
