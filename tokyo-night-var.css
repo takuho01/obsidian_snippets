@@ -1,0 +1,39 @@
+
+:root {
+    /* importを付けると、jsなどから操作できなくなるので付けない */
+    --editor-background-color: rgb(236, 236, 236);
+    --current-cursor-color: rgba(56, 60, 98, 0.449);
+
+    --editor-font-color: black;
+    --editor-line-height: 1.8;
+
+    /* --- tokyo night --- */
+
+    /* heading */
+    --tokyo-h1-bg-color: rgba(255, 117, 126, 0.093);
+    --tokyo-h1-padding-mod: 8px;
+
+    --tokyo-h2-padding-mod: 10px;
+    --tokyo-h2-underline-color: rgba(224, 176, 104, 0.426);
+
+
+    /* line editor */
+    /* --line-editor-rate: calc(10.0/340.0); */
+    --line-editor-rate_base: 0.0294117647058824;
+    --line-editor-rate: 0.0294117647058824;
+    
+    /* 比率を付けた場合（お試し） */
+    --line-editor-rate_base: 0.0216;
+    --line-editor-rate: 0.0216;
+    
+    --editor-width: 675px;
+    --editor-font-size: 18.076px;
+    /* --editor-font-size: calc( var(--func_div) * var(--editor-width) +  var(--func_const) ); */
+    
+    
+    --zoom_func_const: -4.244px;
+    --zoom_func_div: 0.0372;
+    
+  
+}   
+

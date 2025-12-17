@@ -1,0 +1,83 @@
+
+.markdown-source-view, .markdown-preview-view {
+    font-size: var(--editor-font-size);
+}
+
+.cm-line,
+.markdown-preview-view .el-p {
+    line-height: var(--editor-line-height) !important;
+    /* font-weight: var(--editor-weight) !important; */
+}
+
+/* 現在カーソルがある行の背景色を変更 */
+.cm-active.cm-line {
+  background-color: var(--current-cursor-color) !important;
+  /* border-bottom: solid 2px #4ff157 !important; */
+}
+
+/* h1 */
+.HyperMD-header.HyperMD-header-1.cm-line,
+.markdown-preview-view h1 {
+    background-color: var(--tokyo-h1-bg-color);
+    padding-top : calc(var(--p-spacing) - var(--tokyo-h1-padding-mod)) !important;
+    padding-bottom: var(--tokyo-h1-padding-mod) !important;
+    border-radius: 8px;
+}
+
+.HyperMD-header.HyperMD-header-1.cm-line::before,
+.markdown-preview-view h1::before {
+    content: "🖋️ ";
+}
+
+
+/* h2 */
+.HyperMD-header.HyperMD-header-2.cm-line,
+.markdown-preview-view h2 {
+    padding-top : calc(var(--p-spacing) - var(--tokyo-h2-padding-mod)) !important;
+    padding-bottom: var(--tokyo-h2-padding-mod) !important;
+}
+
+.cm-line.HyperMD-header-2, .markdown-preview-view h2 {
+  position: relative;
+}
+
+.cm-line.HyperMD-header-2::after, .markdown-preview-view h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--tokyo-h2-padding-mod) - 3px);
+  height: 1.5px !important;
+  background: var(--tokyo-h2-underline-color);
+}
+
+.HyperMD-header.HyperMD-header-2.cm-line::before,
+.markdown-preview-view h2::before {
+    content: "📚 ";
+}
+
+
+/* line editor */
+
+.cm-sizer, .markdown-source-view.mod-cm6.is-readable-line-width .cm-content {
+    /* エディタの横幅 */
+    /* 背景色が塗られる範囲が設定される */
+    max-width: var(--editor-width) !important;
+}
+
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-line {
+    /* エディタの横幅 */
+    /* 実際にテキストが表示される範囲が設定される */
+    max-width: var(--editor-width) !important;
+}
+
+
+/* title  */
+
+.inline-title {
+    font-size: 25px !important;
+    font-style: italic !important;
+    color: rgb(192, 202, 245) !important ; 
+}
+
+

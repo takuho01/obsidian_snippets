@@ -1,0 +1,11 @@
+
+.HyperMD-header.HyperMD-header-2.cm-line {
+    /* margin-bottom: 20px !important  ; */
+    /* line-height: 2 !important; */
+}
+
+.cm-fat-cursor .CodeMirror-cursor {
+  background-color: var(--nord4);
+  opacity: 0.5;
+  width: 5px;
+}
